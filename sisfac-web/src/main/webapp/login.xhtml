@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<h:outputStylesheet library="css" name="sisfac.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com"></link>
+	<link rel="preconnect" href="https://fonts.gstatic.com"></link>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat&#38;display=swap"
+		rel="stylesheet"></link>
+</h:head>
+<h:body style="background-color: #dde8e7;">
+	<h:form id="frmLog">
+		<p:outputLabel value="NOMBRE DEL SISTEMA"
+			style="font-size: 16px; font-weight: bold;" />
+		<div id="panGen" align="center">
+			<p:growl id="menGen" />
+			<div id="divUsuario">
+				<p:outputLabel value="Usuario:" for="txtNomUsu"
+					styleClass="etiqueta" />
+				<p:inputText id="txtNomUsu" required="true" maxlength="10"
+					value="#{loginBean.usuario}" placeholder="Usuario" />
+				<i class="fa fa-user iconoLogin"></i>
+			</div>
+			<br></br>
+			<div id="divClave">
+				<p:outputLabel value="Clave:" for="pxtClaUsu" styleClass="etiqueta" />
+				<p:password id="pxtClaUsu" required="true" maxlength="10"
+					value="#{loginBean.clave}" placeholder="Clave" />
+				<i class="fa fa-lock iconoLogin"></i>
+			</div>
+			<div id="divIngresar">
+				<p:commandButton value="Ingresar" styleClass="btnIngresar"
+					process="@this :frmLog"
+					actionListener="#{loginBean.validarUsuario}"
+					update=":frmLog:menGen" />
+			</div>
+			<br></br>
+		</div>
+	</h:form>
+</h:body>
+</html>

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.etiqueta {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px !important;
+	font-weight: bold;
+	color: #52928E !important;
+}
+
+.ui-widget-header {
+	color: white !important;
+	background: #52928E !important;
+}
+
+/*Estilos para los botones*/
+.ui-button {
+	font-size: 14px !important;
+}
+
+.icon_document {
+	background:
+		url("#{facesContext.externalContext.request.contextPath}/resources/img/icoDocument16x16.png")
+		!important;
+}
+
+.icon_save {
+	background:
+		url("#{facesContext.externalContext.request.contextPath}/resources/img/icoSave16x16.png")
+		!important;
+}
+
+.icon_cancel {
+	background:
+		url("#{facesContext.externalContext.request.contextPath}/resources/img/icoCancel16x16.png")
+		!important;
+}
+
+.icon_delete {
+	background:
+		url("#{facesContext.externalContext.request.contextPath}/resources/img/icoDelete16x16.png")
+		!important;
+}
+
+.icon_edit {
+	background:
+		url("#{facesContext.externalContext.request.contextPath}/resources/img/icoEdit16x16.png")
+		!important;
+}
+
+/* Estilos para campos de texto */
+.ui-inputfield {
+	width: 250px !important;
+	font-size: 13px !important;
+}
+
+input[readonly] {
+	background-color: gray !important;
+}
+
+/* .ui-datatable */
+.ui-datatable {
+	font-size: 14px !important;
+	text-align: center !important;
+}
+
+.ui-datatable .ui-state-highlight {
+	background: none !important;
+	background-color: #b0d9d6 !important;
+}
+
+#panGen {
+	width: 650px;
+	border: solid;
+	padding: 50px;
+	margin-left: 25%;
+	margin-top: 10%;
+}
+
+.btnIngresar {
+	border-radius: 2px;
+	font-size: 14px !important;
+	background: none !important;
+	background-color: #69b5af !important;
+	color: white;
+	font-weight: bold;
+	margin-top: 5%;
+}
+
+.iconoLogin {
+	position: relative;
+	left: -27px;
+}
