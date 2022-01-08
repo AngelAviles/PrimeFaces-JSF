@@ -29,10 +29,10 @@
 			<p:tab title="Generar Factura">
 				<p:panelGrid id="panGriCabFac" columns="4" style="width:100%">
 					<p:outputLabel value="Numero:" styleClass="etiqueta" />
-					<p:inputText id="txtNumFac" maxlength="16"
+					<p:inputText id="txtNumFac" maxlength="16" required="true"
 						value="#{facturaBean.factura.facNumero}" />
 					<p:outputLabel value="Fecha:" styleClass="etiqueta" />
-					<p:calendar id="calFecFac" value="#{facturaBean.factura.facFecha}" />
+					<p:calendar id="calFecFac" required="true" value="#{facturaBean.factura.facFecha}" />
 					<p:outputLabel for="txtIdeCli" value="Identificación Cliente:"
 						styleClass="etiqueta" />
 					<h:panelGroup>

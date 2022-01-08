@@ -223,7 +223,7 @@ public class FacturaBean extends AbstractManagedBean {
 			if (cliente != null) {
 				if (!listaDetalles.isEmpty()) {
 					factura.setCliente(cliente);
-					facturaSel.setFacEstado(ConstanteWeb.EMITIDO.getValorNumerico());
+					factura.setFacEstado(ConstanteWeb.EMITIDO.getValorNumerico());
 					// 3 - CASCADE
 					factura.setDetalleFacturas(listaDetalles);
 					adminFactura.guardar(factura);
@@ -275,7 +275,7 @@ public class FacturaBean extends AbstractManagedBean {
 
 	public void resetearFormulario() {
 		this.factura = new Factura();
-		this.cliente = null;
+		this.cliente = new Cliente();
 		this.facturaSel = null;
 		this.listaDetalles.clear();
 	}

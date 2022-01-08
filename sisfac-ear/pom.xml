@@ -19,7 +19,7 @@
 		<version.ear.plugin>2.8</version.ear.plugin>
 		<version.ear.plugin.conf>6</version.ear.plugin.conf>
 		<nombreapp>sisfac</nombreapp>
-		<jboss.deploy.dir>C:\Users\angel\wildfly-10.1.0.Final\standalone\deployments\</jboss.deploy.dir>
+		<jboss.deploy.dir>C:\Users\aavil\wildfly-10.1.0.Final\standalone\deployments\</jboss.deploy.dir>
 	</properties>
 
 	<dependencies>
